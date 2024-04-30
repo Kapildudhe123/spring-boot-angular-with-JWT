@@ -1,0 +1,16 @@
+package com.rays.common;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+import org.hibernate.annotations.GenericGenerator;
+
+@MappedSuperclass
+public class BaseDTO {
+	
+	@Id
+	@GeneratedValue(generator = "rays")
+	@GenericGenerator(name = "rays") 
+
+}

@@ -1,0 +1,12 @@
+<div *ngIf="isLogin()">
+    <h3>Hi,{{form.data.fname}}({{form.data.role}})</h3>|
+    <a href="/user">Add User</a>|
+    <a href="/userlist">User List</a>|
+   <a (click)="logout()">logout</a>
+
+</div>
+<div *ngIf="!isLogin()">
+    <h3>Hi, Guest</h3>
+
+</div>
+<hr>

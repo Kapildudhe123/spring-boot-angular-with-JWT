@@ -1,0 +1,42 @@
+2024-04-27 20:50:47,718 1      [lcome Dashboard] ERROR re.templates.TemplateProcessor  - Problem while attempting to copy template directory
+org.eclipse.core.runtime.CoreException: Could not copy file from C:\eclipse\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.9.9.201906180559-RELEASE\resources\welcome\common\bootstrap\css\bootstrap.min.js to D:\Rays\Workspace\Spring WorkSpace\Spring-Boot-01\.metadata\.plugins\org.springsource.ide.eclipse.commons.gettingstarted\dashboard\1714231239530\common\bootstrap\css\bootstrap.min.js
+	at org.springsource.ide.eclipse.commons.core.FileUtil.copyFile(FileUtil.java:75)
+	at org.springsource.ide.eclipse.commons.core.FileUtil.copyDirectory(FileUtil.java:56)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:62)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:72)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:72)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:72)
+	at org.springsource.ide.eclipse.commons.gettingstarted.dashboard.DashboardCopier._getCopy(DashboardCopier.java:86)
+	at org.springsource.ide.eclipse.commons.gettingstarted.dashboard.DashboardCopier.getCopy(DashboardCopier.java:62)
+	at org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard$2.run(WelcomeDashboard.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: D:\Rays\Workspace\Spring WorkSpace\Spring-Boot-01\.metadata\.plugins\org.springsource.ide.eclipse.commons.gettingstarted\dashboard\1714231239530\common\bootstrap\css\bootstrap.min.js (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.springsource.ide.eclipse.commons.core.FileUtil.writeToFile(FileUtil.java:85)
+	at org.springsource.ide.eclipse.commons.core.FileUtil.copyFile(FileUtil.java:68)
+	... 9 more
+2024-04-27 20:50:53,470 5753   [lcome Dashboard] ERROR re.templates.TemplateProcessor  - Problem while attempting to copy template directory
+org.eclipse.core.runtime.CoreException: Could not copy file from C:\eclipse\plugins\org.springsource.ide.eclipse.commons.gettingstarted_3.9.9.201906180559-RELEASE\resources\welcome\common\bootstrap\css\bootstrap.min.js to D:\Rays\Workspace\Spring WorkSpace\Spring-Boot-01\.metadata\.plugins\org.springsource.ide.eclipse.commons.gettingstarted\dashboard\1714231239531\common\bootstrap\css\bootstrap.min.js
+	at org.springsource.ide.eclipse.commons.core.FileUtil.copyFile(FileUtil.java:75)
+	at org.springsource.ide.eclipse.commons.core.FileUtil.copyDirectory(FileUtil.java:56)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:62)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:72)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:72)
+	at org.springsource.ide.eclipse.commons.core.templates.TemplateProcessor.process(TemplateProcessor.java:72)
+	at org.springsource.ide.eclipse.commons.gettingstarted.dashboard.DashboardCopier._getCopy(DashboardCopier.java:86)
+	at org.springsource.ide.eclipse.commons.gettingstarted.dashboard.DashboardCopier.getCopy(DashboardCopier.java:62)
+	at org.springsource.ide.eclipse.commons.gettingstarted.dashboard.WelcomeDashboard$2.run(WelcomeDashboard.java:125)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: D:\Rays\Workspace\Spring WorkSpace\Spring-Boot-01\.metadata\.plugins\org.springsource.ide.eclipse.commons.gettingstarted\dashboard\1714231239531\common\bootstrap\css\bootstrap.min.js (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
+	at org.springsource.ide.eclipse.commons.core.FileUtil.writeToFile(FileUtil.java:85)
+	at org.springsource.ide.eclipse.commons.core.FileUtil.copyFile(FileUtil.java:68)
+	... 9 more
+2024-04-27 20:50:54,532 6815   [lcome Dashboard] WARN  re.templates.TemplateProcessor  - May have failed to replace token 		//window.ide 'dummy'. Replaced/injected later by STS browser integration.
+2024-04-27 20:50:54,532 6815   [lcome Dashboard] WARN  re.templates.TemplateProcessor  - May have failed to replace token 		//The dummy helps preview/test the page in an external browser.
